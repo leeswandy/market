@@ -1,0 +1,72 @@
+.info {
+    width: 100%;
+    height: 11rem;
+    display: inline-block;
+    overflow: hidden; /* 넘치는 부분 감춤 */
+    position: relative; /* 상대 위치 설정 */
+  
+    /* 애니메이션 적용 */
+    animation: rotateImages 10s infinite linear; /* 10초 간격으로 이미지 순환 */
+  }
+  
+  @keyframes rotateImages {
+    0% {
+      background-image: url('/image/김밥.jpg');
+    }
+  
+    25% {
+      background-image: url('/image/돈가스.jpg');
+    }
+  
+    50% {
+      background-image: url('/image/떡볶이.jpg');
+    }
+  
+    75% {
+      background-image: url('/image/라면.jpg');
+    }
+  
+    100% {
+      background-image: url('/image/김밥.jpg'); /* 처음 이미지로 복귀 */
+    }
+  }
+  
+  /* 이미지 크기 조절을 위한 설정 */
+  .info::before {
+    content: ""; /* 가상 요소 생성 */
+    display: block;
+    padding-top: 75%; /* 이미지 비율에 맞게 조절 */
+  }
+
+.info_text{
+    max-width: 48rem;
+    margin: auto;
+    padding: 3rem 1rem 0;
+}
+/*글자 크기 조절*/
+.info_text h1 {
+    margin: 0;
+    font-size: 2rem;
+    line-height: 3.2rem;
+}
+
+.info_text p{
+    margin: 0.5rem 0 0;
+    font-size: 1.13rem;
+    line-height: 1.5rem;
+}
+@media  screen and (max-width:768px) {
+    .info{
+        height: 18.38;
+    }
+    .info_text{
+        padding: 1.5rem 1rem 0;
+    }
+    .info_text h1{
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    .info_text p{
+        display: none;
+    }
+}

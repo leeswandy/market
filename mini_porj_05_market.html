@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/header.css" rel="stylesheet"/>
+    <link href="css/info.css" rel="stylesheet"/>
+    <link href="css/notice.css" rel="stylesheet"/>
+    <link href="css/banner.css" rel="stylesheet"/>
+    <link href="css/footer.css" rel="stylesheet"/>
+    
+    <title> MARKET</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        html{
+            font-size: 16px;
+        }
+
+        body{
+            margin: 0; /*body에 기본 설정된 margin 제거*/
+        }
+
+        .flex{
+            display: flex;
+        }
+
+        .main{
+            padding: 4rem 0 5rem;
+        }
+    </style>
+</head>
+<body>
+    <!--헤더<header)-->
+        <div class="container">
+            <header class="header">
+              <div class="header-content flex">
+                  <!--flex container로 사용하기 위해 div 추가함-->
+                  <div class="header-content_logo">인권김밥</div>
+                  <nav class="header-content_nav flex">
+                    <!--menu 항목이 들어가 있는 navigation semantic tag-->
+                    <ul>
+                       <li>김밥류</li>
+                       <li>라면류</li>
+                       
+                       <li>식사류</li>
+                       <li>음료 및 주류</li>
+                        <li class="active">멤버쉽</li>
+                       
+
+                    </ul>
+                  </nav>
+                  <div class="header-content_input flex">
+                    <!--돋보기 아이콘 삽입-->
+                    <span class="icon glass">
+                        <input type="button" value="&#128269;">
+                    </span>
+                    <span>
+                        <input type="text" class="search" placeholder="드시고 싶은 음식이 있으신가요?">
+                    </span>
+                    
+                    <!--햄버거 메뉴 아이콘 삽입-->
+                    <span class="icon menu">
+                        <input type="button" value="&#9776;">
+                    </span>
+                    <span>
+                        <input type="button" class="chat" value="냄새맡기">
+                    </span>
+                  </div>   
+              </div>
+            </header> 
+            <!--메인(main)-->
+            <!--info-->
+            <main class="main">
+               <section class="info">
+                   <div class="info_text">
+                        <h1>
+                            천국중에 천국은 <br/>
+                            김밥천국
+                        </h1>
+                        <p>
+                            맛이 일품 <br/>
+                            합리적인 가격은 덤
+                        </p>
+                   </div>
+
+               </section>
+               <!--공고(notice)-->
+               <section class="notice">
+                  <h2 class="notice_title">많이 찾는 메뉴 </h2>
+                  <div class="notice_container flex">
+                  <article class="notice_item flex">  
+                    <div class="notice_thumb"></div>
+                    <div class="notice_content">
+                         <div class="notice_content_title">
+                            원조김밥
+                         </div>
+                         <div class="notice_content_address">
+                            여러분들이 찾으시는 그 메뉴 맞아요~
+                         </div>
+                         <div class="notice_content_pay"> 2500원
+                         </div>
+                  </article>
+                  
+                  <article class="notice_item flex">  
+                    <div class="notice_thumb3"></div>
+                    <div class="notice_content">
+                         <div class="notice_content_title">
+                            돈가스
+                         </div>
+                         <div class="notice_content_address">
+                            혹시 돈가스 좋아하세요?
+                         </div>
+                         <div class="notice_content_pay"> 7000원 
+                         </div>
+                        </article>
+                        
+                        <article class="notice_item flex">  
+                            <div class="notice_thumb4"></div>
+                            <div class="notice_content">
+                                 <div class="notice_content_title">
+                                    라면
+                                 </div>
+                                 <div class="notice_content_address">
+                                    가장 생각나는 국민 음식이죠
+                                 </div>
+                                 <div class="notice_content_pay"> 5000원
+                                 </div>
+                          </article>
+                          
+                          <article class="notice_item flex">  
+                            <div class="notice_thumb2"></div>
+                            <div class="notice_content">
+                                 <div class="notice_content_title">
+                                    떡볶이
+                                 </div>
+                                 <div class="notice_content_address">
+                                    매운맛이 일품이예요
+                                 </div>
+                                 <div class="notice_content_pay"> 7000원
+                                 </div>
+                                </article>
+                </div>
+
+                <!--배너(banner)-->
+                <div class="banner flex">
+                    <div class="banner_text">
+                        멤버쉽 혜택을 누려보세요~
+                    </div>
+                    <button class="banner_button">회원가입</button>
+                </div>
+                
+                  <!--공고(notice)-->
+                  <h2 class="notice_title">계절메뉴 </h2>
+                  <div class="notice_container flex">
+                    <article class="notice_item flex">  
+                        <div class="notice_thumb5"></div>
+                        <div class="notice_content">
+                             <div class="notice_content_title">
+                                물냉면
+                             </div>
+                             <div class="notice_content_address">
+                                무더운 여름철 음식속의 휴양지
+                             </div>
+                             <div class="notice_content_pay"> 7000원
+                             </div>
+                      </article>
+                  
+                  <article class="notice_item flex">  
+                    <div class="notice_thumb6"></div>
+                    <div class="notice_content">
+                         <div class="notice_content_title">
+                            열무김치국수
+                         </div>
+                         <div class="notice_content_address">
+                            맛있어요
+                         </div>
+                         <div class="notice_content_pay"> 7500원
+                         </div>
+                        </article>
+                        
+                        <article class="notice_item flex">  
+                            <div class="notice_thumb7"></div>
+                            <div class="notice_content">
+                                 <div class="notice_content_title">
+                                    어묵
+                                 </div>
+                                 <div class="notice_content_address">
+                                    겨울철에 생각나는 1등메뉴
+                                 </div>
+                                 <div class="notice_content_pay"> 6000원
+                                 </div>
+                          </article>
+                          
+                          <article class="notice_item flex">  
+                            <div class="notice_thumb8"></div>
+                            <div class="notice_content">
+                                 <div class="notice_content_title">
+                                    홍합탕
+                                 </div>
+                                 <div class="notice_content_address">
+                                    시원한 국물을 찾으신다면?
+                                 </div>
+                                 <div class="notice_content_pay"> 8000원
+                                 </div>
+                                </article>
+                </div>
+
+                <!--배너(banner)-->
+                <div class="banner_special flex">
+                    <div class="banner_text">
+                       나에게 가까운 김밥천국은?
+                    </div>
+                    <button class="banner_button">주변 매장찾기 </button>
+                </div>
+               </section>
+            </main>
+         <!--맺음말(footer)--> 
+         <footer class="footer">
+             <div class="footer_container">
+                <section class="footer_menu">
+                 <div class="footer_apps">
+                    <div class="footer_appdown">앱 다운로드</div>
+                    <div class="footer_appbtn flex">
+                        <button>App store</button>
+                        <button>Google Play</button>
+                    </div>
+                 </div>
+             <nav class="footer_nav flex">
+                <ul>
+                    <li>유용한 정보</li>
+                    <li>프렌차이즈</li>
+                    <li>블로그</li>
+                    <li>김밥천국매매/운영관리</li>
+                    <li>고객센터</li>
+                </ul>
+                <ul>
+                    <li>자주 묻는 질문</li>
+                    <li>회사 소개</li>
+                    <li>인재 채용</li>
+                </ul>
+             </nav>    
+            </section>
+            <section class="footer_info">
+                 <div>
+                    <strong>대표</strong>이성원
+                    <strong>사업자번호</strong>123123
+                    
+                 </div>
+                 <div>
+                    <strong>직업정보제공사업 신고번호</strong>2023-서울강남-1234 
+                 </div>
+                 <div>
+                    <strong>주소</strong>서울시 강남구 서초동 김밥천국
+                 </div>
+                 <div>
+                    <strong>전화</strong>1644-8282
+                    <strong>고객문의</strong>gimbabchungkuuk</div>
+
+                    <p>
+                        <strong>이용약관</strong> &nbsp; &nbsp;
+                        <strong style="color: #000000">개인정보처리방침</strong>&nbsp;&nbsp;
+                        <strong>위치기반서비스 이용약관</strong>&nbsp;&nbsp;
+                        <strong>이용자보호 비전과 계획</strong>&nbsp;&nbsp;
+                    </p>
+            </section>
+             </div>
+         </footer>
+        </div>
+</body>
+</html>   
+
+<!--맺음말(footer)--> 
